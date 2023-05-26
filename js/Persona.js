@@ -26,7 +26,7 @@ class Persona {
     this.#sexo = sexo;
   }
   saludar() {
-    console.log(`hola soy ${this.#nombre}`);
+    return `hola soy ${this.#nombre}`
   }
 }
 
@@ -43,6 +43,30 @@ class Estudiante extends Persona {
     this.#carrera = carrera;
   }
   estudiar() {
-    console.log(`estoy estudiando ${this.#carrera} `);
+    return `estoy estudiando ${this.#carrera} `
   }
 }
+
+
+const formPersona = document.querySelector('#form-persona');
+
+const cargarPersona = (e) => {
+  e.preventDefault()
+  const dataPersona = Object.fromEntries(new FormData(formPersona))  
+  const persona = new Persona(dataPersona)
+}
+
+
+
+
+formPersona.addEventListener('submit', cargarPersona )
+
+
+
+
+
+
+
+
+
+
