@@ -1,4 +1,8 @@
 class Persona {
+  static esMayorDeEdad(){
+    
+  }
+
   #nombre;
   #edad;
   #sexo;
