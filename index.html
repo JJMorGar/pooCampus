@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poo campus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="nav__container">
+      <ul>
+        <li><strong>🎲</strong></li>
+      </ul>
+      <ul>
+        ejercicios
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+      </ul>
+    </nav>
+
+    <main class="juegos">
+      <!-- Persona -->
+      <section class="juegos__container">
+        <form>
+          <h4>Persona</h4>
+          <div class="grid">
+            <!-- Nombre -->
+            <label for="nombre">
+              nombre
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="nombre"
+                required
+              />
+            </label>
+
+            <!-- Edad -->
+            <label for="edad">
+              edad
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                placeholder="edad"
+                required
+              />
+            </label>
+
+            <!-- Sexo -->
+            <label for="sexo">
+              sexo
+              <select id="sexo" required>
+                <option value="F">F</option>
+                <option value="M">M</option>
+                <option value="otro">Otro</option>
+              </select>
+            </label>
+          </div>
+          <button type="button">saludar</button>
+        </form>
+      </section>
+
+      <!-- Persona Estudiante -->
+      <section class="juegos__container">
+        <form>
+          <h4>Estudiante</h4>
+          <div class="grid">
+            <!-- Nombre -->
+            <label for="nombreEstudainte">
+              nombre
+              <input
+                type="text"
+                id="nombreEstudainte"
+                name="nombreEstudainte"
+                placeholder="nombre"
+                required
+              />
+            </label>
+
+            <!-- Edad -->
+            <label for="edadEstudainte">
+              edad
+              <input
+                type="number"
+                id="edadEstudainte"
+                name="edadEstudainte"
+                placeholder="edad"
+                required
+              />
+            </label>
+
+            <!-- Carrera -->
+            <label for="carreraEStudainte">
+              carrera
+              <input
+                type="text"
+                id="carreraEStudainte"
+                name="carreraEStudainte"
+                placeholder="carrera"
+                required
+              />
+            </label>
+
+            <!-- Sexo -->
+            <label for="sexoEstudiante">
+              sexo
+              <select id="sexoEstudiante" required>
+                <option value="F">F</option>
+                <option value="M">M</option>
+                <option value="otro">Otro</option>
+              </select>
+            </label>
+          </div>
+          <div class="grid">
+            <button type="button">saludar</button>
+            <button type="button">estudiar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
