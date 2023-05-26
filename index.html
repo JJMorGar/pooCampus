@@ -60,7 +60,7 @@
 
       <blockquote id="cita-persona">
         <footer>
-          <cite class="cita-autor"></cite>
+          <cite class="cita-persona-autor"></cite>
         </footer>
       </blockquote>
 
@@ -68,31 +68,31 @@
 
     <!-- Persona Estudiante -->
     <section class="juegos__container">
-      <form>
+      <form id="form-estudiante">
         <h4>Estudiante</h4>
         <div class="grid">
           <!-- Nombre -->
           <label for="nombreEstudainte">
             nombre
-            <input type="text" id="nombreEstudainte" name="nombreEstudainte" placeholder="nombre" required />
+            <input type="text" id="nombreEstudainte" name="nombre" placeholder="nombre" required />
           </label>
 
           <!-- Edad -->
           <label for="edadEstudainte">
             edad
-            <input type="number" id="edadEstudainte" name="edadEstudainte" placeholder="edad" required />
+            <input type="number" id="edadEstudainte" name="edad" placeholder="edad" required />
           </label>
 
           <!-- Carrera -->
           <label for="carreraEStudainte">
             carrera
-            <input type="text" id="carreraEStudainte" name="carreraEStudainte" placeholder="carrera" required />
+            <input type="text" id="carreraEStudainte" name="carrera" placeholder="carrera" required />
           </label>
 
           <!-- Sexo -->
           <label for="sexoEstudiante">
             sexo
-            <select id="sexoEstudiante" required>
+            <select name="sexo" id="sexoEstudiante" required>
               <option value="F">F</option>
               <option value="M">M</option>
               <option value="otro">Otro</option>
@@ -100,14 +100,14 @@
           </label>
         </div>
         <div class="grid">
-          <button type="button">saludar</button>
-          <button type="button">estudiar</button>
+          <button id="saludar"> saludar</button>
+          <button id="estudiar"> estudiar</button>
         </div>
       </form>
 
       <blockquote id="cita-estudiante">
         <footer>
-          <cite class="cita-estudiante"></cite>
+          <cite id="cita-estudiante-autor"></cite>
         </footer>
       </blockquote>
 
