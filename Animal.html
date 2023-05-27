@@ -1,119 +1,127 @@
 <!DOCTYPE html>
 <html data-theme="dark" lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>poo campus</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/Persona.js"></script>
-</head>
+    <script defer src="js/Animal.js"></script>
+  </head>
 
-<body>
+  <body>
     <nav class="nav__container">
-        <ul>
-            <li><strong>🎲</strong></li>
-        </ul>
-        <ul>
-            ejercicios
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-        </ul>
+      <ul>
+        <li><strong>🎲</strong></li>
+      </ul>
+      <ul>
+        ejercicios
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+      </ul>
     </nav>
 
     <main class="juegos">
-        <!-- Animal -->
-        <section class="juegos__container">
-            <form id="form-persona">
-                <h4>Animal</h4>
-                <div class="grid">
-                    <!-- Nombre -->
-                    <label for="nombre">
-                        nombre
-                        <input type="text" id="nombre" name="nombre" placeholder="nombre" required />
-                    </label>
+      <!-- Animal -->
+      <section class="juegos__container">
+        <form id="form-animal">
+          <h4>Animal</h4>
+          <div class="grid">
+            <!-- Nombre -->
+            <label for="nombre">
+              nombre
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="nombre"
+                required
+              />
+            </label>
 
-                    <!-- Edad -->
-                    <label for="edad">
-                        edad
-                        <input type="number" id="edad" name="edad" placeholder="edad" required />
-                    </label>
+            <!-- Edad -->
+            <label for="edad">
+              edad
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                placeholder="edad"
+                required
+              />
+            </label>
+          </div>
+          <button id="sonido-animal" >hacer sonido</button>
+        </form>
 
-                    <!-- Sexo -->
-                    <label for="sexo">
-                        sexo
-                        <select name="sexo" id="sexo" required>
-                            <option value="F">F</option>
-                            <option value="M">M</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </label>
-                </div>
-                <button>saludar</button>
-            </form>
+        <blockquote id="cita-animal">
+          <footer>
+            <cite class="cita-persona-autor"></cite>
+          </footer>
+        </blockquote>
+      </section>
 
-            <blockquote id="cita-persona">
-                <footer>
-                    <cite class="cita-persona-autor"></cite>
-                </footer>
-            </blockquote>
+      <!-- Perro Animal -->
+      <section class="juegos__container">
+        <form id="form-perro">
+          <h4>Perro</h4>
+          <div class="grid">
+            <!-- Nombre -->
+            <label for="nombreEstudainte">
+              nombre
+              <input
+                type="text"
+                id="nombreEstudainte"
+                name="nombre"
+                placeholder="nombre"
+                required
+              />
+            </label>
 
-        </section>
+            <!-- Edad -->
+            <label for="edadEstudainte">
+              edad
+              <input
+                type="number"
+                id="edadEstudainte"
+                name="edad"
+                placeholder="edad"
+                required
+              />
+            </label>
 
-        <!-- Perro Animal -->
-        <section class="juegos__container">
-            <form id="form-estudiante">
-                <h4>Perro</h4>
-                <div class="grid">
-                    <!-- Nombre -->
-                    <label for="nombreEstudainte">
-                        nombre
-                        <input type="text" id="nombreEstudainte" name="nombre" placeholder="nombre" required />
-                    </label>
+            <!-- Raza -->
+            <label for="raza">
+              raza
+              <input
+                type="text"
+                id="raza"
+                name="raza"
+                placeholder="raza"
+                required
+              />
+            </label>
+            
+          </div>
+          <div class="grid">
+            <button id="estudiar">mover cola</button>
+          </div>
+        </form>
 
-                    <!-- Edad -->
-                    <label for="edadEstudainte">
-                        edad
-                        <input type="number" id="edadEstudainte" name="edad" placeholder="edad" required />
-                    </label>
-
-                    <!-- Carrera -->
-                    <label for="carreraEStudainte">
-                        carrera
-                        <input type="text" id="carreraEStudainte" name="carrera" placeholder="carrera" required />
-                    </label>
-
-                    <!-- Sexo -->
-                    <label for="sexoEstudiante">
-                        sexo
-                        <select name="sexo" id="sexoEstudiante" required>
-                            <option value="F">F</option>
-                            <option value="M">M</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="grid">
-                    <button id="saludar"> saludar</button>
-                    <button id="estudiar"> estudiar</button>
-                </div>
-            </form>
-
-            <blockquote id="cita-estudiante">
-                <footer>
-                    <cite id="cita-estudiante-autor"></cite>
-                </footer>
-            </blockquote>
-
-        </section>
-
+        <blockquote id="cita-perro">
+          <footer>
+            <cite id="cita-estudiante-autor"></cite>
+          </footer>
+        </blockquote>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
