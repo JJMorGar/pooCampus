@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poo campus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/Vehiculo.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav__container">
+      <ul>
+        <li><strong>🎲 Vehiculo</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/index.html">1</a></li>
+        <li><a href="/Animal.html">2</a></li>
+        <li><a href="/Figura.html">3</a></li>
+        <li><a href="/Vehiculo.html">4</a></li>
+        <li><a href="/Empleado.html">5</a></li>
+      </ul>
+    </nav>
+
+    <main class="juegos">
+      <!-- Vehiculo -->
+      <article class="juegos__container">
+        <form id="form-vehiculo">
+          <h4>Vehiculo</h4>
+          <div class="grid">
+            <!-- marca -->
+            <label for="marca">
+              marca
+              <input
+                type="text"
+                id="marca"
+                name="marca"
+                placeholder="marca"
+                required
+              />
+            </label>
+
+            <!-- modelo -->
+            <label for="modelo">
+              modelo
+              <input
+                type="number"
+                id="modelo"
+                name="modelo"
+                placeholder="modelo"
+                required
+              />
+            </label>
+
+            <!-- velocidad -->
+            <label for="velocidad">
+              velocidad
+              <input
+                type="number"
+                id="velocidad"
+                name="velocidad"
+                placeholder="velocidad"
+                required
+              />
+            </label>
+          </div>
+          <button>acelerar</button>
+        </form>
+
+        <blockquote id="cita-vehiculo">
+          <footer>
+            <cite class="cita-persona-autor"></cite>
+          </footer>
+        </blockquote>
+      </article>
+
+      <!-- Coceh -->
+      <article class="juegos__container">
+        <form id="form-coche">
+          <h4>Coche</h4>
+          <div class="grid">
+            <!-- Nombre -->
+            <!-- marca -->
+            <label for="marca">
+              marca
+              <input
+                type="text"
+                id="marca"
+                name="marca"
+                placeholder="marca"
+                required
+              />
+            </label>
+
+            <!-- modelo -->
+            <label for="modelo">
+              modelo
+              <input
+                type="number"
+                id="modelo"
+                name="modelo"
+                placeholder="modelo"
+                required
+              />
+            </label>
+
+            <!-- velocidad -->
+            <label for="velocidad">
+              velocidad
+              <input
+                type="number"
+                id="velocidad"
+                name="velocidad"
+                placeholder="velocidad"
+                required
+              />
+            </label>
+
+            <!-- combustible -->
+            <label for="combustible">
+              combustible
+              <input
+                type="number"
+                id="combustible"
+                name="combustible"
+                placeholder="combustible"
+                required
+              />
+            </label>
+          </div>
+          <div class="grid">
+            <button id="saludar">Acelerar</button>
+          </div>
+        </form>
+
+        <blockquote id="cita-coche">
+          <footer>
+            <cite id="cita-estudiante-autor"></cite>
+          </footer>
+        </blockquote>
+      </article>
+    </main>
+  </body>
+</html>

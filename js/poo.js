@@ -220,10 +220,14 @@ class Coche extends Vehiculo {
 }
 
 class Empleado {
+  static incrementId = 0;
+  #idEmpleado;
   #nombre;
   #edad;
   #sueldo;
   constructor({ nombre, edad, sueldo }) {
+    Empleado.incrementId +=1
+    this.#idEmpleado = Empleado.incrementId
     this.#nombre = nombre;
     this.#edad = edad;
     this.#sueldo = sueldo;
@@ -249,7 +253,11 @@ class Empleado {
   calcularSalarioAnual() {
     return this.#sueldo * 12;
   }
+  generarIdEmpleado(){
+    return this.#idEmpleado
+  }
 }
+
 
 class Gerente extends Empleado {
   #departamento;
@@ -271,3 +279,8 @@ class Gerente extends Empleado {
     return super.calcularSalarioAnual();
   }
 }
+
+const gerente = new Gerente({ nombre: "carlos", edad: 232, sueldo: 343 })
+console.log(gerente.generarIdEmpleado());
+const getente2 =new Gerente({ nombre: "carlos", edad: 232, sueldo: 343 })
+console.log(getente2.generarIdEmpleado());
