@@ -52,7 +52,6 @@ class Gerente extends Empleado {
   set departamento(departamento) {
     this.#departamento = departamento;
   }
-
   calcularSalarioAnual() {
     this.sueldo = this.sueldo + this.sueldo * 0.1;
     return super.calcularSalarioAnual();
